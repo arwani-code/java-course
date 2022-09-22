@@ -7,38 +7,13 @@ import java.util.Scanner;
 public class Test {
 
     public static void main(String[] args) {
+        Car car = new Car();
 
-        ArrayList<ArrayList<String>> groceryList = new ArrayList<>();
-
-        ArrayList<String> drinks = new ArrayList<String>();
-        drinks.add("Soda");
-        drinks.add("Milk");
-        drinks.add("Coffe");
-        drinks.add("Tea");
-
-        ArrayList<String> foods = new ArrayList<String>();
-        foods.add("Humberger");
-        foods.add("Sushi");
-        foods.add("Sandwich");
-        foods.add("Hotdog");
-
-        ArrayList<String> sncaks = new ArrayList<String>();
-        sncaks.add("Pottato");
-        sncaks.add("Ramen");
-
-        groceryList.add(foods);
-        groceryList.add(drinks);
-        groceryList.add(sncaks);
-
-        for (int i = 0; i < groceryList.size(); i++) {
-
-            System.out.println();
-            for (int j = 0; j <= i; j++) {
-                System.out.print(groceryList.get(j));
-            }
-            System.out.println();
-
-        }
+        System.out.println(car.model);
+        System.out.println(car.type);
+        System.out.println(car.year);
+        car.startEngine();
+        car.stopEngine();
     }
 
 }
